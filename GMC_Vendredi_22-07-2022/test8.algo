@@ -1,0 +1,15 @@
+ALGORITHM waterbill
+VAR
+    conso : FLOAT := 490.63
+    unit_price : FLOAT := 0.89
+    tax : FLOAT := 76.7
+    debt : FLOAT := 1490.56
+
+BEGIN
+    write("water consumed", conso, "water unit price", unit_price, "DA per litter");
+    amout_water := conso * unit_price;
+    boite := tax + debt;
+    total := amout_water + boite;
+    write("vous devez payer ", total, " da");
+
+END

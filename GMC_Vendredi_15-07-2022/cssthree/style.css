@@ -1,0 +1,16 @@
+.bordera >  h1 ~ p {
+    color: blue;
+}
+
+.bordera {
+    border: solid black;
+}
+.border {
+    border: solid black;
+    margin: 20px;
+}
+.border h1 + p {
+    color: red;
+    
+    
+}

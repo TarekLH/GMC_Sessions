@@ -1,0 +1,27 @@
+ALGORITHM somme2
+VAR
+    a, b, c, somme : INTEGER
+BEGIN
+    //sol one
+    Read(a);
+    Read(b);
+    Read(c);
+
+    //sol two
+    Read(a, b, c);
+
+    //sol three
+    write("Enter First somme : ");
+    Read(a);
+    write("Enter Second somme : ");
+    Read(b);
+    write("Enter Third somme : ");
+    Read(c)
+
+    IF (a > 0) and (b > 0) and (c > 0) THEN
+        somme := a + b + c ;
+        write("La somme des trois nombres est: ")
+    ELSE
+        write("You entred the wrong number")
+    END_IF
+END

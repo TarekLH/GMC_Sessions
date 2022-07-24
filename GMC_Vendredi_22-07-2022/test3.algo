@@ -1,0 +1,8 @@
+ALGORITHM calcule_circonference
+VAR
+    valeur_cote : INTEGER := 5
+    resultat := INTEGER
+BEGIN
+    resultat := valeur_cote * 4 ;
+    write("Votre resultat est= ", resultat);
+END

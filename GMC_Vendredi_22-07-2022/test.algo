@@ -1,0 +1,20 @@
+ALGORITHM somme
+VAR
+    a : INTEGER := 16
+    b : INTEGER := 15
+    c : INTEGER := 301
+    somme : INTEGER
+BEGIN
+    //solution one
+    somme : a + b ;
+    somme := somme + c ;
+    
+    //solution two
+    somme := a + b ;
+    somme +:= c ;
+
+    //solution three
+    somme := a + b + c ;
+    
+    write("", somme);
+END

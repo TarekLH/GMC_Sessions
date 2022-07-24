@@ -1,0 +1,41 @@
+ALGORITHM XYSwitch
+VAR
+    X, Y, Choice : INTEGER
+BEGIN
+    Write("Enter Your Integers");
+    Read(X, Y);
+    Choice := 0;
+    WHILE (Choice < 1 OR Choice > 4) DO
+        Write(" Choose : ");
+        Write(" - 1 For Sum");
+        Write(" - 2 For Multiplication");
+        Write(" - 3 For Difference");
+        Write(" - 4 For Division");
+
+    
+        Write("Enter Your Choice :");
+        Read(Choice);
+
+        SWITCH (Choice) DO
+            case 1 : 
+                Write("The Sum of Two Digits is: ", X + Y);
+            case 2 : 
+                Write("The Multiplication of Two digits is :", X * Y);
+            case 3 :
+                IF (X > Y) THEN
+                    Write("The Difference between X and Y is :", X - Y);
+                ELSE
+                    Write("The Difference between Y and X is :", Y - X);
+                END_IF
+            case 4 :
+                IF (Y > 0) THEN
+                    Write("The Division of X on Y is :", X/Y);
+                ELSE
+                    Write("Can't Divide on Zero.");
+                END_IF
+
+            default : 
+                Write("Write a Valid Value.");
+        END_SWITCH
+    END_WHILE
+END

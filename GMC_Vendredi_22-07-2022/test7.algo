@@ -1,0 +1,16 @@
+ALGORITHM mpyennedif
+VAR
+    nbr_etudiant : INTEGER := 13
+    note : INTEGER := 2
+    diff : INTEGER := 1
+    etudiant : INTEGER
+
+BEGIN
+    etudiant := nbr_etudiant;
+    WHILE (etudiant > 0) DO
+        write("etudiant", etudiant, "sa note",note);
+        note += note + diff;
+        diff *:= 3;
+        etudiant -:=1 ;
+    END_WHILE
+END

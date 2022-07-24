@@ -1,0 +1,11 @@
+ALGORITHM algorithm_ranking_notes
+VAR
+    etudiant : INTEGER := 10
+    note : INTEGER := 4   
+BEGIN
+    WHILE (etudiant > 0) DO
+        write(note);
+        note := note + 2;
+        etudiant -:= 1 ;
+    END_WHILE
+END

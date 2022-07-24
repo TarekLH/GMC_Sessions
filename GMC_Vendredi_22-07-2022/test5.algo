@@ -1,0 +1,10 @@
+ALGORITHM calcule_circonference_cercle
+CONST
+    pi: FLOAT := 3.14
+VAR
+    a : INTEGER := 2
+    r: INTEGER := 13
+BEGIN
+    cir := a * pi * r;
+    write("la circonference est: ", cir)
+END

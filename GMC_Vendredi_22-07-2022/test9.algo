@@ -1,0 +1,15 @@
+ALGORITHM thegreatestnbr
+VAR
+    X, Y, Z : INTEGER
+BEGIN
+    write("Entrez votre premiere valeur ", Read(X));
+    write("Entrez votre deuxieme valeur ", Read(Y));
+    write("Entrez votre derniere valeur ", Read(Z));
+    IF (X > Y AND X > Z) THEN
+        write("votre premiere valeur est la plus grande ", X);
+    ELSE IF (Y > X AND Y > Z)
+        write("votre deuxieme valeur est la plus grande ", Y);
+    ELSE
+        write("votre derniere valeur est la plus grande ", Z);
+    END_IF
+END

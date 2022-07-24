@@ -1,0 +1,102 @@
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+h2{
+    margin-bottom: 50px;
+}
+
+section h1 {
+    font-size: 2em;
+    text-align: left;
+}
+.main {
+    border: solid black;
+}
+
+#pleft {
+    color: red;
+}
+
+#pmid {
+    text-align: center;
+    font-weight: bold;
+}
+
+#pright {
+    text-align: right;
+}
+
+.border {
+    border: solid black;
+}
+.border_p {
+    border: solid black;
+    margin: 20px;
+
+}
+.border_p p {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.border_p #pred {
+    color: red;
+}
+
+.border_p #pblue {
+    color: blue;
+    font-weight: bold;
+}
+
+.border_p #pyellow {
+    background-color: yellow;
+}
+
+.border_p #phelvetica {
+    font-size: 25px;
+    font-style: italic;
+}
+
+.border_p #punderline {
+    text-decoration: underline;
+}
+
+
+.border_p #pgreen {
+    color: green;
+    font-weight: bold;
+}
+
+.border_p #pbarre {
+    text-decoration: line-through;
+}
+
+.border_p #punderG {
+    text-decoration: underline wavy green;
+}
+
+.three .bord {
+    border: solid black;
+}
+.pbord {
+    border: solid black;
+    margin: 20px;
+    padding-left: 40%;
+    text-align: center;
+}
+.pabord {
+    border: solid black ;
+    margin: 20px;
+    text-align: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+.pbord p {
+    font-family: "handlee" ;
+}

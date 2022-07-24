@@ -1,0 +1,10 @@
+ALGORITHM calcule_circonference_T
+VAR
+    a : INTEGER := 9
+    b : INTEGER := 7
+    resultat : INTEGER
+BEGIN
+    resultat := a * 2 + b ;
+    write("circonference = ", resultat);
+
+END
