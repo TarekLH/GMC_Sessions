@@ -1,0 +1,28 @@
+ALGORITHM selectiv_sorting
+VAR
+    arrold, arrnew : ARRAY_OF INTEGER [N]
+BEGIN
+    FOR i FROM 1 TO tab.length STEP 1 DO
+        Write("remplire tab")
+        Read(tab[i])
+    END_FOR
+
+
+    FOR i FROM 1 to arrold.length STEP 1 DO
+        min := arrold[1]
+        FOR j FROM 1 TO len STEP 1 DO
+            IF (arrold[j] < min) THEN
+                min := arrold[j];
+            END_IF
+        END_FOR
+
+        
+
+        arrnew[k] := min;
+        k := k + 1
+        FOR j FROM lastindex TO len STEP 1 DO
+            arrold[j] := arrold[j + 1]
+        END_FOR
+        len := len - 1
+    END_FOR
+END

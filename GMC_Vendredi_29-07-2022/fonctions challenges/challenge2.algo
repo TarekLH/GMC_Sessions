@@ -1,0 +1,14 @@
+ALGORITHM factorielle
+VAR
+    fact : INTEGER
+BEGIN
+    !7=7*6*5*4*3*2*1
+    nbr := 7;
+    fact := 1;
+    WHILE (1 < nbr) DO
+        fact := fact * nbr  //7:= 7* a=6
+        nbr := nbr - 1
+    END_WHILE
+
+
+END

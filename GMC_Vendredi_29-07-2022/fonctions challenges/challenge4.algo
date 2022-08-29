@@ -1,0 +1,20 @@
+ALGORITHM challenge4
+VAR
+    tab : ARRAY_OF INTEGER[N]
+BEGIN
+    FOR i FROM 1 TO tab.length STEP 1  DO
+        Write("remplissez tab: ")
+        Read(tab)
+    END_FOR
+    //traitement (occurence dun nbr)
+    FOR i FROM 1 TO tab.length STEP 1  DO
+        IF (tab[i] = ) THEN //si contenu dune case est egale a la meme chose plusiseurs fois 
+            
+        END_IF
+    END_FOR
+    //writing
+    FOR i FROM 1 TO tab.length STEP 1  DO
+        Write("")
+    END_FOR
+
+END

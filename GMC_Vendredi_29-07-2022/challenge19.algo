@@ -1,0 +1,42 @@
+ALGORITHM challenge_19_voir_challenge_sur_github
+VAR
+    tab: ARRAY_OF INTEGER[N][M];
+    i, j, N, M : INTEGER
+BEGIN
+    FOR i FROM 1 TO N STEP 1  DO
+        FOR j FROM 1 TO M STEP 1 DO
+            Write("remplissez le tab")
+            Read(tab[i][j]);
+            WHILE (tab[i][j] <> 0 OR tab[i][j] <> 1) DO
+                Write("incorrect binary value")
+                Read(tab[i][j])
+            END_WHILE
+        END_FOR
+    END_FOR
+    FOR i FROM 1 TO N STEP 1  DO
+        IF (i = N) THEN
+            IF (j = M) THEN
+
+            ELSE_IF (j=1)
+
+            ELSE
+
+            END_IF
+        ELSE_IF (i = 1)
+            IF(j=M) THEN
+
+            ELSE_IF (j=1) THEN 
+
+            ELSE
+
+            END_IF
+        
+        END_IF
+        FOR j FROM 1 TO M STEP 1 DO
+            IF (tab[i][j] = 0 AND tab[i-1]tab[j]=1 AND tab[i+1]tab[j]=1 AND tab[i]tab[j-1]=1 AND tab[i]tab[j+1]=1) THEN
+                tab[i][j] := 1;
+            END_IF
+        END_FOR
+    END_FOR
+
+END

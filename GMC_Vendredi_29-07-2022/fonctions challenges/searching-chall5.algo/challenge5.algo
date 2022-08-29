@@ -1,0 +1,18 @@
+ALGORITHM challenge5
+VAR
+    tab : ARRAY_OF INTEGER[N]
+BEGIN
+    
+    FOR i FROM 1 TO N DO 
+        Write("enter values")
+        Read(tabr[i])
+    END_FOR
+
+    //traitement
+
+    
+    WHILE () DO
+        
+    END_WHILE
+
+END

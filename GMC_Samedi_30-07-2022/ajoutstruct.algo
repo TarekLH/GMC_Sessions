@@ -1,0 +1,74 @@
+ALGORITHM ajout_struct
+VAR
+    tmp, Link :    STRUCT
+        Id : INTEGER
+        Nom : STRING[50];
+        Prenom : STRING[50];
+        Age: INTEGER;
+        Next : ^Link;
+    END_STRUCT
+
+    P, Head, q : ^Link
+
+    Pos, IdTmp, E : INTEGER
+
+    PrenomTmp : STRING[50];
+BEGIN
+    //# Filling
+    E := 1;
+
+    IdTmp := 0;
+    WHILE (E = 1) DO
+        P^.Id := IdTmp;
+        IdTmp := IdTmp + 1;
+
+        Write("Give me The Last Name of The Student");
+        Read(P^.Nom);
+
+        Write("Give me The First Name of The Student");
+        Read(P^.Prenom);
+
+        Write("Give me The Age of The Student");
+        Read(P^.Age);
+
+        Write("Do you want to enter another one ?");
+        Write(" - Type 1 for Yes.");
+        Write(" - Type 0 For No.");
+        Read(E);
+
+        IF (E = 1) THEN
+            P^.Next := Create(Link);
+            P := P^.Next;
+        END_IF
+
+    END_WHILE
+
+    //# Accessing
+    //challenge 5
+
+    p := Head;
+
+    Read(pos);
+
+    FOR i FROM 1 TO pos - 2 STEP 1  DO
+        P := P^.Next;
+    END_FOR
+
+    q := P^.Next;
+    p := P^.Next;
+
+    P := create(link);
+
+    Write("Give me The Last Name of The Student");
+    Read(P^.Nom);
+
+    Write("Give me The First Name of The Student");
+    Read(P^.Prenom);
+
+    Write("Give me The Age of The Student");
+    Read(P^.Age);
+
+    P^.Next := q;
+
+
+END

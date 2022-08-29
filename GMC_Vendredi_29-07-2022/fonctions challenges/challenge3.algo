@@ -1,0 +1,14 @@
+ALGORITHM challenge_3
+VAR
+    c : INTEGER
+
+
+
+BEGIN
+
+    Write("entrez n et k: ")
+    Read(n, k)
+    c := fact(n+1-k)/ fact(k)(n-1) //appl fonction fact
+    Write("la valeur de c: ", c)
+
+END

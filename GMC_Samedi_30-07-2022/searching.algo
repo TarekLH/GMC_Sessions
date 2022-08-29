@@ -1,0 +1,7 @@
+FUNCTION linear_search(parameters) : return_type
+VAR
+    set_declarations
+BEGIN
+    set_instructions
+    RETURN value ;
+END

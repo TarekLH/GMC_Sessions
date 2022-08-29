@@ -1,0 +1,37 @@
+ALGORITHM algorithm_afficher_le_contenu_dune_case
+VAR
+    arr : ARRAY_OF INTEGER[50];
+    len, i: INTEGER;
+BEGIN
+    // Reading The Arrays Value
+    Write("Give me the array length");
+    Read(len);
+    WHILE (len > 50) DO
+        Write("Give me a Correct Array length !");
+        Read(len);
+    END_WHILE
+
+    FOR i FROM 1 TO len STEP 1  DO
+        Read(arr[i]);
+        // arr[i] :=  arr[i - 1] + 2;
+    END_FOR
+
+
+    // Traitement
+    //FOR i FROM 1 TO arr.length STEP 1  DO
+        // arr[i] := 1;
+        //arr[i] := arr[i] - 1;
+    //END_FOR
+
+
+    // Write the Ouput
+
+        Write("entrez le num de la case que vous voulez afficher")
+        Read(i)
+        IF (i > arr.length) THEN
+            Write("Vous avez depasse le nombre de cases existantes")
+        ELSE
+            Write(arr[i]);
+        END_IF
+        
+END

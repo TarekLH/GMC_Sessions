@@ -1,0 +1,112 @@
+ALGORITHM prechallenge
+VAR
+    i, moy : INTEGER
+    arr : ARRAY_OF INTEGER[50]
+BEGIN
+    // initialize the array
+    FOR i FROM 1 TO 50 STEP 1  DO
+        arr[i] := -1;
+    END_FOR
+    // first average
+    arr[1] := 4
+    arr[2] := 8
+    arr[3] := 9
+    arr[4] := 9
+    
+    WHILE (arr[i] >= o) DO
+        moy := moy + arr[i];
+        i:= i+1
+    END_WHILE
+
+    moy := moy/(i-1);
+    Write("first moy",moy);
+
+    // second average
+    arr[1] := 32
+    arr[2] := 54
+    arr[3] := 78
+    arr[4] := 4
+    arr[5] := 99
+    
+    WHILE (arr[i] >= o) DO
+        moy := moy + arr[i];
+        i:= i+1
+    END_WHILE
+
+    moy := moy/(i-1);
+    Write("first moy",moy); 
+
+
+    // third average
+    arr[1] := 32
+    arr[2] := 345
+    arr[3] := 67
+    
+    
+    WHILE (arr[i] >= o) DO
+        moy := moy + arr[i];
+        i:= i+1
+    END_WHILE
+
+    moy := moy/(i-1);
+    Write("first moy",moy); 
+
+    // fourth average
+    arr[1] := 67
+    
+    
+    WHILE (arr[i] >= o) DO
+        moy := moy + arr[i];
+        i:= i+1
+    END_WHILE
+
+    moy := moy/(i-1);
+    Write("first moy",moy); 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    set1[4,8,9,9]
+    somme := 0
+    moy := 4
+    FOR i FROM 1 TO set1.length STEP 1 DO
+    somme:= somme + set[i]
+    moy:= somme / moy
+    END_FOR
+    Write("la moy du set1 est: ", moy)
+    
+    
+    set2[32,54,78,4,99]
+    somme2 := 0
+    moy2 := 0
+    FOR i FROM 1 TO set2.length STEP 1 DO
+    somme2:= somme2 + set2[i]
+    moy2:= somme2 / moy2
+    END_FOR
+    Write("la moy du set1 est: ", moy)
+
+
+    set3[23,345,67]
+    somme3 := 0
+    moy3 := 0
+    FOR i FROM 1 TO set3.length STEP 1 DO
+    somme3:= somme3 + set3[i]
+    moy3:= somme3 / moy3
+    END_FOR
+    Write("la moy du set1 est: ", moy3)
+
+
+    set4[67]
+    somme4 := 0
+    moy4 := 0
+    FOR i FROM 1 TO set4.length STEP 1 DO
+    somme3:= somme4 + set4[i]
+    moy3:= somme4 / moy4
+    END_FOR
+    Write("la moy du set1 est: ", moy4)
+END

@@ -1,0 +1,39 @@
+ALGORITHM ArrayAlgorithm_find_the_lowest_value
+VAR
+    arr : ARRAY_OF INTEGER[50];
+    len, i: INTEGER;
+BEGIN
+    // Reading The Arrays Value
+    Write("Give me the array length");
+    Read(len);
+    WHILE (len > 50) DO
+        Write("Give me a Correct Array length !");
+        Read(len);
+    END_WHILE
+
+    FOR i FROM 1 TO len STEP 1  DO
+        Read(arr[i]);
+        // arr[i] :=  arr[i - 1] + 2;
+    END_FOR
+
+
+    // Traitement
+    min := arr[1]
+    FOR i FROM 1 TO arr.length STEP 50  DO
+        // arr[i] := 1;
+        //arr[i] := arr[i] - 1;
+        IF (arr[i] < min AND arr[i] <> min) THEN
+            min := 
+        END_IF
+
+
+    END_FOR
+
+    
+
+
+    // Write the Ouput
+    //FOR i FROM 1 TO arr.length STEP 1  DO
+      //  Write(arr[i]);
+    //END_FOR
+END

@@ -1,0 +1,40 @@
+ALGORITHM challenge_17
+VAR
+    tab: ARRAY_OF INTEGER[N][M];
+    i, j, N, M : INTEGER
+
+BEGIN
+    FOR i FROM 1 TO N STEP 1  DO
+        FOR j FROM 1 TO M STEP 1 DO
+            Write("remplissez le tab")
+            Read(tab[i][j]);
+        END_FOR
+    END_FOR
+    FOR i FROM 1 TO N STEP 1  DO
+        FOR j FROM 1 TO M STEP 1 DO
+            Write(tab[i][j]);
+        END_FOR
+    END_FOR
+END
+
+ALGORITHM challenge_18
+VAR
+    tab: ARRAY_OF INTEGER[N][M];
+    i, j, N, M : INTEGER
+BEGIN
+    FOR i FROM 1 TO N STEP 1  DO
+        FOR j FROM 1 TO M STEP 1 DO
+            Write("remplissez le tab")
+            Read(tab[i][j]);
+        END_FOR
+    END_FOR
+    FOR i FROM 1 TO N STEP 1  DO
+        FOR j FROM 1 TO M STEP 1 DO
+            IF (i=j) THEN
+                Write(tab[i][j]);
+            ELSE
+                Write("contenu hors diagonal", tab[i][j])
+            END_IF
+        END_FOR
+    END_FOR
+END

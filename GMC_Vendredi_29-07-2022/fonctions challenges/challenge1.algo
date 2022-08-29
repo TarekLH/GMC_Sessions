@@ -1,0 +1,41 @@
+ALGORITHM challenge_1
+VAR
+    
+    // addition 
+    FUNCTION somme(a : INTEGER, b : INTEGER) : INTEGER
+    VAR
+    BEGIN
+        somme := a + b
+        RETURN somme ;
+    END
+
+    //multiplication
+    FUNCTION multip(c : INTEGER, d : INTEGER) : INTEGER
+    VAR
+    BEGIN
+        multip := c * d
+        RETURN multip ;
+    END
+
+    //division
+    FUNCTION div(e : FLOAT, f : FLOAT) : FLOAT
+    VAR
+    BEGIN
+        div := e / f
+        RETURN div ;
+    END
+
+//programme principale
+
+BEGIN
+    i:= 123
+    j:= 
+    
+    
+
+
+
+
+
+
+END

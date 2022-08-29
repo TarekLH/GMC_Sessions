@@ -1,0 +1,48 @@
+ALGORITHM algo_array_1
+VAR
+    tableau : ARRAY_OF INTEGER[17]
+    len, i : INTEGER
+BEGIN
+    // Reading The Arrays Value
+    Write("Give me the array length");
+    Read(len);
+    WHILE (len > 17) DO
+        Write("Give me a Correct Array length !");
+        Read(len);
+    END_WHILE
+    // utilisateur remplit les cases
+    FOR i FROM 1 TO len STEP 1  DO
+        Read(arr[i]);
+        // arr[i] :=  arr[i - 1] + 2;
+    END_FOR
+
+
+    // Traitement des cases
+    //FOR i FROM 1 TO arr.length STEP 1  DO
+        // arr[i] := 1;
+        //arr[i] := arr[i] - 1;
+        
+        //premiere essay
+        i := 1
+        WHILE ( arr[i] > 0 AND arr[i] <= length) DO
+            i := i + 1
+        END_WHILE
+        IF (i <= 0 )
+                Write("There is a negative value")
+            ELSE 
+                IF (i = length)
+                    Write("your array is clean");
+                END_IF
+            END_IF
+        
+        
+        IF (i = length) THEN
+            set_instructions
+        END_IF
+    //END_FOR
+    
+    // Write the Ouput
+    FOR i FROM 1 TO arr.length STEP 1  DO
+        Write(arr[i]);
+    END_FOR
+END

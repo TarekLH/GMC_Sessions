@@ -170,10 +170,35 @@ console.log(countries, array)*/
     }
 }*/
 
-/*let rank = prompt()
+//   Solution 1
+/*let MostSkilled = {
+    key : "Alex",
+    numSkills: users["Alex"].skills.length
+}
+
 for (const key in users) {
-    if (users[key.indexof(skills)] > )
-}*/
+    if (users[key].skills.length > MostSkilled["numSkills"]) {
+        MostSkilled = {
+            key : key,
+            numSkills: users[key].skills.length
+        }
+    }
+}
+
+console.log(MostSkilled["key"], users[MostSkilled["key"]]);*/
+
+// Solution 2
+// let MostSkilled = users["Alex"]
+
+// for (const key in users) {
+//     if (users[key].skills.length > MostSkilled.skills.length ) {
+//         MostSkilled = users[key]
+//     }
+// }
+
+// console.log(MostSkilled);
+
+
 
 /*function fullName(firstName, lastName) {
     return firstName + lastName
@@ -182,6 +207,7 @@ var firstName = prompt()
 var lastName = prompt()
 
 console.log(fullName(firstName, lastName))*/
+
 
 /*function findumois(salary, bonus) {
     if (bonus == true)
